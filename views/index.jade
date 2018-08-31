@@ -1,5 +1,11 @@
 extends layout
 
 block content
+  if isMobile
+    p mobile redirect
+    script.
+      window.location.replace("equeum://auth?token=sdfsdfsdf")
+      //- window.location.replace("exp://localhost:19000/auth?test=23423")
+
   h1= title
   p Welcome to #{title}
